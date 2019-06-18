@@ -18,7 +18,7 @@ resource "google_container_cluster" "kubey"{
             "https://www.googleapis.com/auth/monitoring",
         ]
 
-        labels {
+        labels = {
             this-is-for = "dev-cluster"
 
         }
