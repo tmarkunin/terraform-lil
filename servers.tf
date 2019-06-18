@@ -16,8 +16,6 @@ resource "google_compute_instance" "firstserver"{
     }
     }
 
-
-
     metadata = {
         foo = "bar"
     }
