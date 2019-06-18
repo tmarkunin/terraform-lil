@@ -10,11 +10,13 @@ resource "google_compute_instance" "firstserver"{
     }
     network_interface{
         subnetwork = "${google_compute_subnetwork.dev-subnet.name}"
+
+            access_config {
+
+    }
     }
 
-    access_config {
 
-    }
 
     metadata {
         foo = "bar"
