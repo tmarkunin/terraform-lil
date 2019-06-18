@@ -4,8 +4,8 @@ provider "google" {
     region = "europe-north1"
 }
 provider "azurerm" {
-    subscription_id = "0"
-    client_id = "1"
-    client_secret = "2"
-    tenant_id = "3"
+    subscription_id = "${var.subscription}"
+    client_id = "${var.client}"
+    client_secret = "${var.password}"
+    tenant_id = "${var.tenant}"
 }
