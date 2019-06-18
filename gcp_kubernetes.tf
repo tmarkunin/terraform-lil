@@ -3,7 +3,7 @@ resource "google_container_cluster" "kubey"{
     zone = "us-west1-a"
     initial_node_count = "1"
 
-    additional _zones = ["us-west1-b"]
+    additional_zones = ["us-west1-b"]
 
     master_auth {
         password = "password"
