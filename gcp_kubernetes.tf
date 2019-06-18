@@ -6,7 +6,7 @@ resource "google_container_cluster" "kubey"{
     additional_zones = ["us-west1-b"]
 
     master_auth {
-        password = "password"
+        password = "Verystrongpassword1234"
         username = "username"
     }
 
