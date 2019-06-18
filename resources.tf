@@ -24,7 +24,7 @@ resource "azurerm_virtual_network" "blue_virtual_network"{
     name = "subnet2"
     address_prefix = "10.0.2.0/24"
   }
-  tags {
+  tags = {
     environment = "blue-world-finder"
   }
 }
